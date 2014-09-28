@@ -1,0 +1,19 @@
+digraph "C:/Users/Geiser/Documents/Pascal/Fachhochschule/INTRO/x_git_intro_sfr_pge/01_Projects/robo/Sources/Platform.c"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="C:/Users/Geiser/Documents\l/Pascal/Fachhochschule\l/INTRO/x_git_intro_sfr_pge\l/01_Projects/robo/Sources\l/Platform.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Platform.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_platform_8h.html"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PE_Types.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_e___types_8h.html",tooltip="PE_Types.h - contains definitions of basic types, register access macros and hardware specific macros..."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="stdint.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PE_Error.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_e___error_8h.html",tooltip="This component \"PE_Error\" contains internal definitions of the error constants. "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="stddef.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="LED.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_l_e_d_8h.html"];
+  Node7 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,37 @@
+digraph "C:/Users/Geiser/Documents/Pascal/Fachhochschule/INTRO/x_git_intro_sfr_pge/01_Projects/robo/Sources/Application.c"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="C:/Users/Geiser/Documents\l/Pascal/Fachhochschule\l/INTRO/x_git_intro_sfr_pge\l/01_Projects/robo/Sources\l/Application.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Platform.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_platform_8h.html"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PE_Types.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_e___types_8h.html",tooltip="PE_Types.h - contains definitions of basic types, register access macros and hardware specific macros..."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="stdint.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PE_Error.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_e___error_8h.html",tooltip="This component \"PE_Error\" contains internal definitions of the error constants. "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="stddef.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Application.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_application_8h.html"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="WAIT1.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_w_a_i_t1_8h.html",tooltip="Implements busy waiting routines. "];
+  Node8 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PE_Const.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_e___const_8h.html",tooltip="This component \"PE_Const\" contains internal definitions of the constants. "];
+  Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="IO_Map.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_i_o___map_8h.html",tooltip="IO_Map.h - implements an IO device&#39;s mapping. This module contains symbol definitions of all peripher..."];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="MKL25Z4.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Cpu.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_cpu_8h.html"];
+  Node12 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="LED.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_l_e_d_8h.html"];
+  Node13 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

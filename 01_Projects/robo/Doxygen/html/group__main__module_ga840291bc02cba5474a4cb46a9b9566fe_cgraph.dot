@@ -1,0 +1,31 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PE_low_level_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___cpu__module.html#ga95039f54c45f24c1b4ed640fa2f63f11"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="BitIoLdd1_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___bit_io_ldd1__module.html#gadb85449174dc263f061e143166eb86c5",tooltip="Initializes the device. Allocates memory for the device data structure, allocates interrupt vectors a..."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="BitIoLdd2_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___bit_io_ldd2__module.html#ga553dbb392db7bc92230a019512a1e5ab",tooltip="Initializes the device. Allocates memory for the device data structure, allocates interrupt vectors a..."];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="BitIoLdd3_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___bit_io_ldd3__module.html#gaf15a33397436187afce41eff9523414f",tooltip="Initializes the device. Allocates memory for the device data structure, allocates interrupt vectors a..."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="APP_Start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_application_8c.html#aabcf963ffb18273bc6b2c869b2ccef13",tooltip="Application main start and main routine. "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PL_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_platform_8c.html#a0651118fc777b5c63724b9ec785c86f3",tooltip="Platform initialization. "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="LED_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_l_e_d_8c.html#ab3570a8c9e1266519ad1c7e00093812b",tooltip="LED Driver Intialization. "];
+  Node6 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="WAIT1_Waitms",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___w_a_i_t1__module.html#ga04b03075f856862ff2bc4ff69825aeb6"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="WAIT1_WaitLongCycles",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___w_a_i_t1__module.html#gad800b2446f397d9524bf1780d2646a57"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="WAIT1_WaitCycles",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___w_a_i_t1__module.html#ga2ef0c866b014b3f8bba49508c79a4c21"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="WAIT1_Wait100Cycles",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___w_a_i_t1__module.html#gaa9a9a87e96edf43071b5f322cfa72333"];
+  Node11 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="WAIT1_Wait10Cycles",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___w_a_i_t1__module.html#gaff67df7b318b8d5cf4555a24fe7c7f93"];
+}

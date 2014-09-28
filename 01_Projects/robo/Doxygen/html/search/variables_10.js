@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['scllowtimeout',['SCLLowTimeout',['../struct_l_d_d___i2_c___t_stats.html#af6af8ae5b9414298f9a0e5d065c6f3d8',1,'LDD_I2C_TStats']]],
+  ['sdalowtimeout',['SDALowTimeout',['../struct_l_d_d___i2_c___t_stats.html#a9f3bfd5d01433711d763f893192da34e',1,'LDD_I2C_TStats']]],
+  ['sdpprt',['SDPPrt',['../struct_l_d_d___u_s_b___host___t_t_d___struct.html#af1881ea197419558fdb55dc5f98ee446',1,'LDD_USB_Host_TTD_Struct']]],
+  ['sec',['Sec',['../struct_l_d_d___time_date___t_time_rec.html#a05cccc86e89e5704b0460caaf2429f75',1,'LDD_TimeDate_TTimeRec']]],
+  ['sec100',['Sec100',['../struct_l_d_d___time_date___t_time_rec.html#a2cd2e13e7c478f04ea1c4c460b104491',1,'LDD_TimeDate_TTimeRec']]],
+  ['second',['Second',['../struct_l_d_d___r_t_c___t_time.html#ab6c770706c18542e856d56398850ac9e',1,'LDD_RTC_TTime']]],
+  ['sectorsize',['SectorSize',['../struct_l_d_d___s_d_h_c___t_card_erase.html#a3c0c33e89b65f4f6bfd6043585df5486',1,'LDD_SDHC_TCardErase']]],
+  ['seedhigh',['SeedHigh',['../struct_l_d_d___c_r_c___t_user_c_r_c_standard.html#a1618ebd5b27d9e71598e19df7ebbc1c8',1,'LDD_CRC_TUserCRCStandard']]],
+  ['seedlow',['SeedLow',['../struct_l_d_d___c_r_c___t_user_c_r_c_standard.html#a4add9670995777c55ffde5d6abec885c',1,'LDD_CRC_TUserCRCStandard']]],
+  ['sentchars',['SentChars',['../struct_l_d_d___s_e_r_i_a_l___t_stats.html#a60198f844b85f9e73efaca83e32471cd',1,'LDD_SERIAL_TStats']]],
+  ['size',['Size',['../struct_l_d_d___e_t_h___t_buffer_desc.html#abddc4273b732d3cf44ff0b6870d6b87a',1,'LDD_ETH_TBufferDesc::Size()'],['../struct_l_d_d___s_d_h_c___t_buffer_desc.html#a117f5acff1ada72194a95b38795bca56',1,'LDD_SDHC_TBufferDesc::Size()']]],
+  ['slavegeneralcalladdr',['SlaveGeneralCallAddr',['../struct_l_d_d___i2_c___t_stats.html#ac197175a686624b673584bf24e56b8ab',1,'LDD_I2C_TStats']]],
+  ['slavereceivedchars',['SlaveReceivedChars',['../struct_l_d_d___i2_c___t_stats.html#a1f5f4c88b26ee91ad3ade3182c83b359',1,'LDD_I2C_TStats']]],
+  ['slaverxoverrun',['SlaveRxOverrun',['../struct_l_d_d___i2_c___t_stats.html#afe6c0b4f10465050a22af12bb0d8cd00',1,'LDD_I2C_TStats']]],
+  ['slavesentchars',['SlaveSentChars',['../struct_l_d_d___i2_c___t_stats.html#ad4935dd9ff320dcc83fe33f388713c85',1,'LDD_I2C_TStats']]],
+  ['slavesmbusalertresponse',['SlaveSmBusAlertResponse',['../struct_l_d_d___i2_c___t_stats.html#a8013f91bdae1fc4fddf111aa1e2a52ca',1,'LDD_I2C_TStats']]],
+  ['slavesmbuscalladdr',['SlaveSmBusCallAddr',['../struct_l_d_d___i2_c___t_stats.html#a134cb9fb9e37217e70e8a93924bca300',1,'LDD_I2C_TStats']]],
+  ['slavetxunderrun',['SlaveTxUnderrun',['../struct_l_d_d___i2_c___t_stats.html#add2f9914a1ea98c3bf86c0cab84e6a8c',1,'LDD_I2C_TStats']]],
+  ['sourceaddress',['SourceAddress',['../struct_l_d_d___d_m_a___t_transfer_descriptor.html#a1f204488d1a8b0c542fb7523f604b5e3',1,'LDD_DMA_TTransferDescriptor']]],
+  ['sourceaddressincrement',['SourceAddressIncrement',['../struct_l_d_d___d_m_a___t_transfer_descriptor.html#afd5e0566912bf5b706cd350519ad77c6',1,'LDD_DMA_TTransferDescriptor']]],
+  ['sourcemodulosize',['SourceModuloSize',['../struct_l_d_d___d_m_a___t_transfer_descriptor.html#a65316d477535d064953174d3eb7eadfe',1,'LDD_DMA_TTransferDescriptor']]],
+  ['sourcetransfersize',['SourceTransferSize',['../struct_l_d_d___d_m_a___t_transfer_descriptor.html#a96068433ffe065c3fa85f7d2f9a9b545',1,'LDD_DMA_TTransferDescriptor']]],
+  ['sr_5flock',['SR_lock',['../group___cpu__module.html#ga08ee8b0f642aeef5bbbce3bb4ec1bb28',1,'SR_lock():&#160;Cpu.c'],['../group___cpu__module.html#ga08ee8b0f642aeef5bbbce3bb4ec1bb28',1,'SR_lock():&#160;Cpu.c']]],
+  ['sr_5freg',['SR_reg',['../group___cpu__module.html#ga326c16dd0db38f80ec48c7727d764481',1,'SR_reg():&#160;Cpu.c'],['../group___cpu__module.html#ga326c16dd0db38f80ec48c7727d764481',1,'SR_reg():&#160;Cpu.c']]]
+];
