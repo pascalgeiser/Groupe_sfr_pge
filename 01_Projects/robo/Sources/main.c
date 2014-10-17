@@ -37,12 +37,19 @@
 #include "LedBit3.h"
 #include "BitIoLdd3.h"
 #include "WAIT1.h"
+#include "CS1.h"
+#include "TI1.h"
+#include "TimerIntLdd1.h"
+#include "TU1.h"
+#include "SW1.h"
+#include "ExtIntLdd1.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
 #include "IO_Map.h"
 /* User includes (#include below this line is not maintained by Processor Expert) */
+#include "Platform.h"
 #include "Application.h"
 
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
@@ -50,6 +57,9 @@ int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
 {
   /* Write your local variable definition here */
+#if PL_HAS_RESET_KEY
+  WAIT1_Waitms(500); /* wait some time until we mux the reset line */
+#endif
 
   /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
   PE_low_level_init();
