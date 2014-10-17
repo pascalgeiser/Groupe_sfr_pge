@@ -14,9 +14,13 @@
 #if PL_HAS_EVENTS
   #include "Event.h"
 #endif
+#if PL_HAS_MEALY
+  #include "Mealy.h"
+#endif
 #if PL_HAS_KEYS
   #include "Keys.h"
 #endif
+
 
 static uint8_t lastKeyPressed;
 
@@ -83,12 +87,24 @@ void APP_Start(void) {
   PL_Init(); /* platform initialization */
 
   EVNT_SetEvent(EVNT_INIT); /* set initial event */
-  APP_Loop();
-#if 0
+  //APP_Loop();
+#if 1
   for(;;) {
+#if PL_HAS_MEALY
+    MEALY_Step();
+#else
+    LED1_On();
+    WAIT1_Waitms(300);
+    LED1_Off();
+    LED2_On();
+    WAIT1_Waitms(300);
+    LED2_Off();
+    LED3_On();
+    WAIT1_Waitms(300);
+    LED3_Off();
+#endif
   }
 #endif
-
   /* just in case we leave the main application loop */
   PL_Deinit();
 }

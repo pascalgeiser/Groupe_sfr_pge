@@ -32,6 +32,8 @@
   /*!< Set to 1 to use reset switch on FRDM as button, 0 otherwise */
 #define PL_HAS_JOYSTICK       (0 && PL_IS_FRDM && PL_HAS_KEYS)
   /*!< Set to 1 to enable joystick shield support, 0 otherwise */
+#define PL_HAS_MEALY      	  (1 && PL_NOF_LEDS>=1 && PL_NOF_KEYS>=1)
+  /*!< Set to 1 to enable Mealy FSM, 0 otherwise */
 #define PL_HAS_DEBOUNCE       (0)//(1 && PL_HAS_KEYS)
   /*!< Set to 1 to enable triggers, 0 otherwise */
 
