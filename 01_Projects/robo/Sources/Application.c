@@ -93,8 +93,8 @@ void APP_Start(void) {
   EVNT_SetEvent(EVNT_INIT); /* set initial event */
   //APP_Loop();
 #if 1
+  //BUZ_Beep(1000, 2000);
   for(;;) {
-	  BUZ_Beep(0x1, 0x2000);
 #if PL_HAS_MEALY
     MEALY_Step();
 #else
