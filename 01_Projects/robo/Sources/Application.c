@@ -8,6 +8,7 @@
 #include "Platform.h"
 #include "Application.h"
 #include "WAIT1.h"
+#include "CLS1.h"
 #if PL_HAS_LED
   #include "LED.h"
 #endif
@@ -90,6 +91,7 @@ void APP_Start(void) {
   //APP_Loop();
 #if 1
   for(;;) {
+	  CLS1_SendStr("Hello World!", CLS1_GetStdio()->stdOut);
 #if PL_HAS_MEALY
     MEALY_Step();
 #else
