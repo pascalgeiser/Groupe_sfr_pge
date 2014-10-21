@@ -91,7 +91,6 @@ void APP_Start(void) {
   //APP_Loop();
 #if 1
   for(;;) {
-	  CLS1_SendStr("Hello World!", CLS1_GetStdio()->stdOut);
 #if PL_HAS_MEALY
     MEALY_Step();
 #else

@@ -10,6 +10,7 @@
 #include "Mealy.h"    /* our own interface */
 #include "LED.h"      /* interface to LED driver */
 #include "Keys.h"     /* interface to switch 1 */
+#include "CLS1.h"	  /* Console functions access. */
 /*!
  \brief Enumeration for the LEDs we want to emit. Note that they are encoded in bits
 */
@@ -138,9 +139,21 @@ static void LEDPut(const uint8_t set) {
 */
 void MEALY_Step(void) {
   InputState i;
+  int lock;
 
   i = GetInput(); /* get input state */
   LEDPut(tbl[state][i][1]); /* output the next state */
+  if(i==INPUT_b) // If button has been pressed.
+  {
+	  if (lock==1){
+		  CLS1_SendStr("Button FRDM pressed.", CLS1_GetStdio()->stdOut);
+		  lock = 0;
+	  }
+  }
+  else
+  {
+	  lock = 1;
+  }
   state = (MealyState)(tbl[state][i][0]);  /* read out next internal state */
 }
 
