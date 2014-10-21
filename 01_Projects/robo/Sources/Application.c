@@ -21,6 +21,9 @@
 #if PL_HAS_KEYS
   #include "Keys.h"
 #endif
+#if PL_HAS_BUZZER
+  #include "Buzzer.h"
+#endif
 
 
 static uint8_t lastKeyPressed;
@@ -91,6 +94,7 @@ void APP_Start(void) {
   //APP_Loop();
 #if 1
   for(;;) {
+	  BUZ_Beep(0x1, 0x2000);
 #if PL_HAS_MEALY
     MEALY_Step();
 #else

@@ -52,9 +52,11 @@
     <GeneratedCs>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\AS1.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\ASerialLdd1.c</PathName>
+      <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\BUZ1.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\BitIoLdd1.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\BitIoLdd2.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\BitIoLdd3.c</PathName>
+      <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\BitIoLdd4.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\CLS1.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\CS1.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\Cpu.c</PathName>
@@ -72,6 +74,7 @@
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\WAIT1.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Project_Settings\Startup_Code\startup.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Application.c</PathName>
+      <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Buzzer.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Event.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Events.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Keys.c</PathName>
@@ -79,14 +82,17 @@
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Mealy.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Platform.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Timer.c</PathName>
+      <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Trigger.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\main.c</PathName>
     </GeneratedCs>
     <GeneratedHs>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\AS1.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\ASerialLdd1.h</PathName>
+      <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\BUZ1.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\BitIoLdd1.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\BitIoLdd2.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\BitIoLdd3.h</PathName>
+      <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\BitIoLdd4.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\CLS1.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\CS1.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\Cpu.h</PathName>
@@ -106,6 +112,7 @@
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\UTIL1.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\WAIT1.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Application.h</PathName>
+      <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Buzzer.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Event.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Events.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Keys.h</PathName>
@@ -113,6 +120,7 @@
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Mealy.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Platform.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Timer.h</PathName>
+      <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Trigger.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\iofiles\MKL25Z4.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd\inc\ADC_PDD.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd\inc\CMP_PDD.h</PathName>

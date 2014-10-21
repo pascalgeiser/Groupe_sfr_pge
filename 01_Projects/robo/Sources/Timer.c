@@ -32,7 +32,7 @@ void TMR_OnInterrupt(void) {
     cntr = 0;
   }
 #if PL_HAS_TRIGGER
-  TRG_IncTick();
+  TRG_IncTick(); //Increment the Trigger (10ms are over)
 #endif
 }
 
