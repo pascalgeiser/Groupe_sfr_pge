@@ -75,8 +75,10 @@
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Project_Settings\Startup_Code\startup.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Application.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Buzzer.c</PathName>
+      <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Debounce.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Event.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Events.c</PathName>
+      <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\KeyDebounce.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Keys.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\LED.c</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Mealy.c</PathName>
@@ -113,8 +115,10 @@
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Generated_Code\WAIT1.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Application.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Buzzer.h</PathName>
+      <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Debounce.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Event.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Events.h</PathName>
+      <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\KeyDebounce.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Keys.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\LED.h</PathName>
       <PathName>C:\Users\Geiser\Documents\Pascal\Fachhochschule\INTRO\x_git_intro_sfr_pge\01_Projects\robo\Sources\Mealy.h</PathName>
