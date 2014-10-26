@@ -18,12 +18,22 @@ static portTASK_FUNCTION(T1, pvParameters) {
   }
 }
 
-void RTOS_Run(void) {
+static portTASK_FUNCTION(T2, pvParameters) {
+  for(;;) {
+	  LED_U1_Neg();
+    FRTOS1_vTaskDelay(50/portTICK_RATE_MS);
+  }
+}
 
-  FRTOS1_vTaskStartScheduler();
+void RTOS_Run(void) {
+   FRTOS1_vTaskStartScheduler();
 }
 
 void RTOS_Init(void) {
+	/* Add task LED blinking on ROBO*/
+		if (FRTOS1_xTaskCreate(T2, (signed portCHAR *)"T2", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL) != pdPASS) {
+		 for(;;){} /* error */
+	  }
   /*! \todo Add tasks here */
   if (FRTOS1_xTaskCreate(T1, (signed portCHAR *)"T1", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL) != pdPASS) {
     for(;;){} /* error */
