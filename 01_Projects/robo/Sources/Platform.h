@@ -67,6 +67,8 @@
        /*!< FRDM board has no keys without joystick shield */
   #else
     #define PL_NOF_LEDS       (3)
+	#define PL_NOF_LEDS_ROBO	(1) //PGE
+
        /*!< FRDM board has up to 3 LEDs (RGB) */
 #if PL_HAS_RESET_KEY
     #define PL_NOF_KEYS       (1)

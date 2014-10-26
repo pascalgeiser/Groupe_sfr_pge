@@ -109,6 +109,40 @@
     /*!< De-Initialize LED 3 */
 #endif
 
+
+#if PL_NOF_LEDS_ROBO >= 1
+  #include "LedU1.h"
+  #define LED_U1_On()     LedU1_ClrVal()
+    /*!< Turn LED 1 on */
+  #define LED_U1_Off()    LedU1_SetVal()
+    /*!< Turn LED 1 off */
+  #define LED_U1_Neg()    LedU1_NegVal()
+    /*!< Toggle LED 1 */
+  #define LED_U1_Get()    LedU1_GetVal()
+    /*!< Return TRUE if LED is on, FALSE otherwise */
+  #define LED_U1_Put(val) LedU1_PutVal(val)
+    /*!< Turn LED on or off */
+  #define LED_U1_Init()   /* do nothing */
+    /*!< Initialize LED */
+  #define LED_U1_Deinit() /* do nothing */
+    /*!< De-Initialize LED */
+#else
+  #define LED_U1_On()     /* do nothing */
+    /*!< Turn LED 1 on */
+  #define LED_U1_Off()    /* do nothing */
+    /*!< Turn LED 1 off */
+  #define LED_U1_Neg()    /* do nothing */
+    /*!< Toggle LED 1 */
+  #define LED_U1_Get()  0 /* do nothing */
+    /*!< Return TRUE if LED is on, FALSE otherwise */
+  #define LED_U1_Put(val) /* do nothing */
+    /*!< Turn LED 1 on or off */
+  #define LED_U1_Init()   /* do nothing */
+    /*!< Initialize LED 1 */
+  #define LED_U1_Deinit() /* do nothing */
+    /*!< De-Initialize LED 1 */
+#endif
+
 /*!
  * \brief LED test routine.
  * This routine tests if:
