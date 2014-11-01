@@ -79,12 +79,15 @@ void Cpu_OnNMIINT(void)
 **     Returns     : Nothing
 ** ===================================================================
 */
+
+/*
 void TI1_OnInterrupt(void)
 {
 	#if PL_HAS_TIMER
 	  TMR_OnInterrupt();
 	#endif
 }
+*/
 
 /*
 ** ===================================================================
@@ -151,6 +154,11 @@ void FRTOS1_vApplicationTickHook(void)
 {
   /* Called for every RTOS tick. */
   /* Write your code here ... */
+
+ //Increment the Trigger new because, ...
+	#if PL_HAS_TRIGGER
+	  TRG_IncTick(); //Increment the Trigger (10ms are over)
+	#endif
 }
 
 /*
