@@ -26,6 +26,11 @@ static portTASK_FUNCTION(T2, pvParameters) {
 }
 
 void RTOS_Run(void) {
+
+   if (FRTOS1_xTaskCreate(T1, (signed portCHAR *)"T1", configMINIMAL_STACK_SIZE+150, NULL, tskIDLE_PRIORITY, NULL) != pdPASS) {
+     for(;;){} /* error */
+   }
+
    FRTOS1_vTaskStartScheduler();
 }
 
@@ -35,9 +40,6 @@ void RTOS_Init(void) {
 		 for(;;){} /* error */
 	  }
   /*! \todo Add tasks here */
-  if (FRTOS1_xTaskCreate(T1, (signed portCHAR *)"T1", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL) != pdPASS) {
-    for(;;){} /* error */
-  }
 }
 
 void RTOS_Deinit(void) {

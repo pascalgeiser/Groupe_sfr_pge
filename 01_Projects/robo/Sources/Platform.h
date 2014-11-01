@@ -34,6 +34,8 @@
   /*!< Set to 1 to enable joystick shield support, 0 otherwise */
 #define PL_HAS_MEALY      	  (1 && PL_NOF_LEDS>=1 && PL_NOF_KEYS>=1)
   /*!< Set to 1 to enable Mealy FSM, 0 otherwise */
+#define PL_HAS_SHELL          (1 && (PL_IS_FRDM || (PL_IS_ROBO && PL_HAS_USB_CDC)))
+  /*!< Set to 1 to enable shell, 0 otherwise */
 #define PL_HAS_DEBOUNCE       (1)//(1 && PL_HAS_KEYS)
   /*!< Set to 1 to enable triggers, 0 otherwise */
 #define PL_HAS_TRIGGER	(1)
@@ -42,6 +44,12 @@
   /*!< Set to 1 to enable triggers, 0 otherwise */
 #define PL_HAS_RTOS	(1)
   /*!< Set to 1 to enable triggers, 0 otherwise */
+#define PL_HAS_USB_CDC        (0)
+  /*!< Set to 1 if using USB CDC, 0 otherwise */
+#define PL_HAS_BLUETOOTH      (0 && PL_IS_ROBO)
+  /*!< Set to 1 if using Bluetooth, 0 otherwise */
+#define PL_HAS_SHELL_QUEUE    (0 && PL_HAS_SHELL)
+  /*!< Set to 1 if using shell queues, 0 otherwise */
 
 /* additional hardware configuration */
 
@@ -54,8 +62,6 @@
   //#define PL_KEY_POLLED_KEY5    (1)
   //#define PL_KEY_POLLED_KEY6    (1)
   //#define PL_KEY_POLLED_KEY7    (0)
-#elif PL_IS_ROBO
-  #define PL_KEY_POLLED_KEY1    (0)
 #endif
 
 
@@ -78,12 +84,6 @@
        /*!< FRDM board has no keys without joystick shield */
 #endif
   #endif
-#elif PL_IS_ROBO
-  #define PL_NOF_LEDS       (1)
-     /*!< We have up to 2 LED's on the robo board */
-  #define PL_NOF_KEYS       (1)
-     /*!< We have up to 1 push button */
-	 /*!< We have 0 LED's on the SRB board, BECAUSE WE DON'T HAVE AN MCU ON THE ROBO */
 #else
   #error "unknown configuration?"
 #endif
