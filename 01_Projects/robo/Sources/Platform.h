@@ -48,8 +48,14 @@
   /*!< Set to 1 if using USB CDC, 0 otherwise */
 #define PL_HAS_BLUETOOTH      (0 && PL_IS_ROBO)
   /*!< Set to 1 if using Bluetooth, 0 otherwise */
-#define PL_HAS_SHELL_QUEUE    (0 && PL_HAS_SHELL)
+#define PL_HAS_SHELL_QUEUE    (1 && PL_HAS_SHELL)
   /*!< Set to 1 if using shell queues, 0 otherwise */
+#define PL_HAS_SEMAPHORE      (1)
+  /*!< Set to 1 if using semaphore labs, 0 otherwise */
+#define PL_HAS_LINE_SENSOR    (0 && PL_IS_ROBO)
+  /*!< Set to 1 if using line sensor, 0 otherwise */
+#define PL_HAS_REFLECTANCE    (0 && PL_HAS_LINE_SENSOR)
+  /*!< Set to 1 if using reflectance sensor array, 0 otherwise */
 
 /* additional hardware configuration */
 

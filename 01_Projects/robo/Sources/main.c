@@ -47,6 +47,7 @@
 #include "BUZ1.h"
 #include "BitIoLdd4.h"
 #include "FRTOS1.h"
+#include "RTOSCNTRLDD1.h"
 #include "LedU1.h"
 #include "BitIoLdd5.h"
 /* Including shared modules, which are used for whole project */
