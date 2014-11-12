@@ -11,19 +11,22 @@
 #include "FRTOS1.h"
 #include "LED.h"
 
+/*
 static portTASK_FUNCTION(T1, pvParameters) {
   for(;;) {
     LED1_Neg();
     FRTOS1_vTaskDelay(50/portTICK_RATE_MS);
   }
 }
-
+*/
+/*
 static portTASK_FUNCTION(T2, pvParameters) {
   for(;;) {
 	  LED_U1_Neg();
     FRTOS1_vTaskDelay(50/portTICK_RATE_MS);
   }
 }
+*/
 
 void RTOS_Run(void) {
 
@@ -36,9 +39,9 @@ void RTOS_Run(void) {
 
 void RTOS_Init(void) {
 	/* Add task LED blinking on ROBO*/
-		if (FRTOS1_xTaskCreate(T2, (signed portCHAR *)"T2", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL) != pdPASS) {
-		 for(;;){} /* error */
-	  }
+	//	if (FRTOS1_xTaskCreate(T2, (signed portCHAR *)"T2", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL) != pdPASS) {
+	//	 for(;;){} /* error */
+	//  }
   /*! \todo Add tasks here */
 }
 

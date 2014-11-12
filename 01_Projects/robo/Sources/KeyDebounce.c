@@ -24,6 +24,11 @@ static DBNC_KeySet KEYDBNC_GetKeys(void) {
     keys |= (1<<0);
   }
 #endif
+#if PL_NOF_LEDS_ROBO  //PGE
+  if (KEY2_Get()) {
+    keys |= (1<<1);
+  }
+#endif
 #if PL_NOF_KEYS >= 2
   if (KEY2_Get()) {
     keys |= (1<<1);
@@ -71,6 +76,11 @@ static void KEYDBNC_OnDebounceEvent(DBNC_EventKinds event, DBNC_KeySet keys) {
         EVNT_SetEvent(EVNT_SW1_PRESSED);
       }
 #endif
+#if PL_NOF_LEDS_ROBO   //PGE
+      if (keys==(1<<1)) {
+        EVNT_SetEvent(EVNT_SW2_PRESSED);
+      }
+#endif
 #if PL_NOF_KEYS >= 2
       if (keys==(1<<1)) {
         EVNT_SetEvent(EVNT_SW2_PRESSED);
@@ -110,6 +120,11 @@ static void KEYDBNC_OnDebounceEvent(DBNC_EventKinds event, DBNC_KeySet keys) {
         EVNT_SetEvent(EVNT_SW1_LPRESSED);
       }
 #endif
+#if PL_NOF_LEDS_ROBO   //PGE
+      if (keys==(1<<1)) {
+        EVNT_SetEvent(EVNT_SW2_LPRESSED);
+      }
+#endif
 #if PL_NOF_KEYS >= 2
       if (keys==(1<<1)) {
         EVNT_SetEvent(EVNT_SW2_LPRESSED);
@@ -147,6 +162,11 @@ static void KEYDBNC_OnDebounceEvent(DBNC_EventKinds event, DBNC_KeySet keys) {
 #if PL_NOF_KEYS >= 1
       if (keys==(1<<0)) {
         EVNT_SetEvent(EVNT_SW1_RELEASED);
+      }
+#endif
+#if PL_NOF_LEDS_ROBO   //PGE
+      if (keys==(1<<1)) {
+        EVNT_SetEvent(EVNT_SW2_RELEASED);
       }
 #endif
 #if PL_NOF_KEYS >= 2

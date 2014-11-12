@@ -28,7 +28,7 @@
   /*!< Set to 1 to enable key/push button support, 0 otherwise */
 #define PL_HAS_KBI            (1)
   /*!< Set to 1 to enable key interrupt support, 0 otherwise */
-#define PL_HAS_RESET_KEY      (1 && PL_IS_FRDM && PL_HAS_KEYS)
+#define PL_HAS_RESET_KEY      (0 && PL_IS_FRDM && PL_HAS_KEYS)
   /*!< Set to 1 to use reset switch on FRDM as button, 0 otherwise */
 #define PL_HAS_JOYSTICK       (0 && PL_IS_FRDM && PL_HAS_KEYS)
   /*!< Set to 1 to enable joystick shield support, 0 otherwise */
@@ -52,9 +52,9 @@
   /*!< Set to 1 if using shell queues, 0 otherwise */
 #define PL_HAS_SEMAPHORE      (1)
   /*!< Set to 1 if using semaphore labs, 0 otherwise */
-#define PL_HAS_LINE_SENSOR    (0 && PL_IS_ROBO)
+#define PL_HAS_LINE_SENSOR    (1)
   /*!< Set to 1 if using line sensor, 0 otherwise */
-#define PL_HAS_REFLECTANCE    (0 && PL_HAS_LINE_SENSOR)
+#define PL_HAS_REFLECTANCE    (1 && PL_HAS_LINE_SENSOR)
   /*!< Set to 1 if using reflectance sensor array, 0 otherwise */
 
 /* additional hardware configuration */
@@ -86,7 +86,7 @@
     #define PL_NOF_KEYS       (1)
        /*!< FRDM board with using the reset button */
 #else
-    #define PL_NOF_KEYS       (0)
+    #define PL_NOF_KEYS       (1)
        /*!< FRDM board has no keys without joystick shield */
 #endif
   #endif

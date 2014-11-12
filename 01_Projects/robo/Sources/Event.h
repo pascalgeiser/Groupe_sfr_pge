@@ -20,6 +20,11 @@ typedef enum EVNT_Handle {
   EVNT_SW1_LPRESSED,
   EVNT_SW1_RELEASED,
 #endif
+#if PL_NOF_LEDS_ROBO   //PGE
+  EVNT_SW2_PRESSED,
+  EVNT_SW2_LPRESSED,
+  EVNT_SW2_RELEASED,
+#endif
 #if PL_NOF_KEYS >= 2
   EVNT_SW2_PRESSED,
   EVNT_SW2_LPRESSED,
@@ -50,6 +55,7 @@ typedef enum EVNT_Handle {
   EVNT_SW7_LPRESSED,
   EVNT_SW7_RELEASED,
 #endif
+  EVNT_REF_START_STOP_CALIBRATION,
   EVNT_NOF_EVENTS       /*!< Must be last one! */
 } EVNT_Handle;
 
