@@ -54,6 +54,7 @@ static void APP_EventHandler(EVNT_Handle event) {
 	#if PL_NOF_KEYS >= 1
 	    case EVNT_SW1_PRESSED:
 	      lastKeyPressed = 1;
+	      EVNT_SetEvent(EVNT_REF_START_STOP_CALIBRATION);
 	  #if PL_HAS_SHELL
 	      SHELL_SendString("SW1 pressed!\r\n");
 	  #endif

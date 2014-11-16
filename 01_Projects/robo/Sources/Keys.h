@@ -48,12 +48,22 @@ typedef enum {
     /*!< if we do not have a button, then return 'not pressed' */
 #endif
 
-#if PL_NOF_KEYS>=2
+#if PL_NOF_LEDS_ROBO
   #include "SW2.h"
 
   #define KEY2_Get()  (!(SW2_GetVal()))
     /*!< Macro which returns TRUE if key is pressed */
 #else
+  #define KEY2_Get()  FALSE
+    /*!< if we do not have a button, then return 'not pressed' */
+#endif
+
+#if PL_NOF_KEYS>=2
+  #include "SW2.h"
+
+  #define KEY2_Get()  (!(SW2_GetVal()))
+    /*!< Macro which returns TRUE if key is pressed */
+//#else //PGE
   #define KEY2_Get()  FALSE
     /*!< if we do not have a button, then return 'not pressed' */
 #endif
