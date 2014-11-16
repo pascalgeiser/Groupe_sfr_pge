@@ -38,7 +38,7 @@ static uint8_t lastKeyPressed;
 static void APP_EventHandler(EVNT_Handle event) {
 	  switch(event) {
 	    case EVNT_INIT:
-	      LED1_On();
+	      /*LED1_On();
 	      WAIT1_Waitms(50);
 	      LED1_Off();
 	      LED2_On();
@@ -46,15 +46,14 @@ static void APP_EventHandler(EVNT_Handle event) {
 	      LED2_Off();
 	      LED3_On();
 	      WAIT1_Waitms(50);
-	      LED3_Off();
+	      LED3_Off();*/
 	      break;
 	    case EVENT_LED_HEARTBEAT:
-	      LED1_Neg();
+	      //LED1_Neg();
 	      break;
 	#if PL_NOF_KEYS >= 1
 	    case EVNT_SW1_PRESSED:
 	      lastKeyPressed = 1;
-	      EVNT_SetEvent(EVNT_REF_START_STOP_CALIBRATION);
 	  #if PL_HAS_SHELL
 	      SHELL_SendString("SW1 pressed!\r\n");
 	  #endif
@@ -76,9 +75,22 @@ static void APP_EventHandler(EVNT_Handle event) {
 	#if PL_NOF_LEDS_ROBO
 	    case EVNT_SW2_PRESSED:
 	      lastKeyPressed = 2;
-	#if PL_HAS_SHELL
+	 #if PL_HAS_SHELL
 	      SHELL_SendString("SW2 pressed!\r\n");
-	#endif
+	      EVNT_SetEvent(EVNT_REF_START_STOP_CALIBRATION);
+	 #endif
+	      break;
+	    case EVNT_SW2_LPRESSED:
+	    	LED_U1_Neg();
+	 #if PL_HAS_SHELL
+	      SHELL_SendString("SW2 long pressed!\r\n");
+	 #endif
+	      break;
+	    case EVNT_SW2_RELEASED:
+	    	LED_U1_Neg();
+	 #if PL_HAS_SHELL
+	      SHELL_SendString("SW2 released!\r\n");
+	 #endif
 	      break;
 	#endif
 	#if PL_NOF_KEYS >= 3
