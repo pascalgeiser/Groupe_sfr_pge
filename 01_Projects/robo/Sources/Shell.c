@@ -20,6 +20,23 @@
 #if PL_HAS_SHELL_QUEUE
   #include "ShellQueue.h"
 #endif
+#if PL_HAS_REFLECTANCE
+  #include "Reflectance.h"
+#endif
+#if PL_HAS_MOTOR
+  #include "Motor.h"
+#endif
+#if PL_HAS_MPC4728
+  #include "MPC4728.h"
+#endif
+#if PL_HAS_QUAD_CALIBRATION
+  #include "QuadCalib.h"
+#endif
+#if PL_HAS_QUADRATURE
+  #include "Q4CLeft.h"
+  #include "Q4CRight.h"
+#endif
+
 
 static uint32_t SHELL_val; /* used as demo value for shell */
 
@@ -89,6 +106,28 @@ static const CLS1_ParseCommandCallback CmdParserTable[] =
 #if PL_HAS_BLUETOOTH
 #if BT1_PARSE_COMMAND_ENABLED
   BT1_ParseCommand,
+#endif
+#endif
+#if PL_HAS_REFLECTANCE
+  #if REF_PARSE_COMMAND_ENABLED
+  REF_ParseCommand,
+  #endif
+#endif
+#if PL_HAS_MOTOR
+  MOT_ParseCommand,
+#endif
+#if PL_HAS_MPC4728
+  MPC4728_ParseCommand,
+#endif
+#if PL_HAS_QUAD_CALIBRATION
+  QUADCALIB_ParseCommand,
+#endif
+#if PL_HAS_QUADRATURE
+#if Q4CLeft_PARSE_COMMAND_ENABLED
+  Q4CLeft_ParseCommand,
+#endif
+#if Q4CRight_PARSE_COMMAND_ENABLED
+  Q4CRight_ParseCommand,
 #endif
 #endif
   NULL /* Sentinel */

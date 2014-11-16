@@ -57,6 +57,7 @@
 #define PL_HAS_REFLECTANCE    (1 && PL_HAS_LINE_SENSOR)
   /*!< Set to 1 if using reflectance sensor array, 0 otherwise */
 
+
 /* additional hardware configuration */
 
 /* if keys are using interrupts or are polled */
