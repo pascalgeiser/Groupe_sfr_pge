@@ -58,13 +58,13 @@
   /*!< Set to 1 if using reflectance sensor array, 0 otherwise */
 #define PL_HAS_MOTOR          (1 && PL_IS_ROBO)
   /*!< Set to 1 if using motors, 0 otherwise */
-#define PL_HAS_CONFIG_NVM     (1)
+#define PL_HAS_CONFIG_NVM     (0)
   /*!< Set to 1 if using NVMC, 0 otherwise */
-#define PL_HAS_MPC4728        (1 && PL_IS_ROBO)
+#define PL_HAS_MPC4728        (0 && PL_IS_ROBO)
   /*!< Set to 1 if using MPC4728, 0 otherwise */
-#define PL_HAS_QUAD_CALIBRATION (1 && PL_HAS_MPC4728)
+#define PL_HAS_QUAD_CALIBRATION (0 && PL_HAS_MPC4728)
   /*!< Set to 1 if using quadrature calibration, 0 otherwise */
-#define PL_HAS_QUADRATURE     (1 && PL_IS_ROBO)
+#define PL_HAS_QUADRATURE     (0 && PL_IS_ROBO)
   /*!< Set to 1 if using quadrature counters, 0 otherwise */
 
 /* additional hardware configuration */

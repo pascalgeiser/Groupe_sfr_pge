@@ -51,7 +51,6 @@
 #include "BUZ1.h"
 #include "BitIoLdd4.h"
 #include "FRTOS1.h"
-#include "RTOSCNTRLDD1.h"
 #include "LedU1.h"
 #include "BitIoLdd5.h"
 #include "LED_IR.h"
@@ -72,6 +71,15 @@
 #include "BitIoLdd12.h"
 #include "SW2.h"
 #include "BitIoLdd13.h"
+#include "DIRL.h"
+#include "BitIoLdd14.h"
+#include "PWMR.h"
+#include "PwmLdd1.h"
+#include "DIRR.h"
+#include "BitIoLdd15.h"
+#include "PWML.h"
+#include "PwmLdd2.h"
+#include "MOTTU.h"
 
 #ifdef __cplusplus
 extern "C" {
